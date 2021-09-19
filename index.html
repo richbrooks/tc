@@ -62,5 +62,10 @@
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
+    <script>
+      var entityEl = document.querySelector('#pyra');  
+      entityEl.object3D.rotation.y = THREE.Math.degToRad(45);
+      entityEl.object3D.rotation.divideScalar(2);
+    </script>
   </body>
 </html>
